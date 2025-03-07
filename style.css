@@ -105,9 +105,9 @@ hr {
     margin: 0;
 }
 
-/* Contenitore Trending */
+/* Trending Section */
 .trending {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
 }
@@ -206,9 +206,24 @@ hr {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pattern {
+        display: none;
+    }
     .trending-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Stili generali */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 /* Sezione Articles */
@@ -299,7 +314,6 @@ article small {
 .mage img {
     display: flex;
     justify-content: flex-end;
-    align-items: end;
     width: 180px;
     height: 120px;
     object-fit: cover;
